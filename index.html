@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./Files/favicon.png">
+    </head>
+<body>
+    
+<!--Barra/Menu Superior-->
+    <nav>
+        <header>
+            <img id="logo" src="./files/whiteLogo.png">
+            <div class="menu" id="menu" onclick="myFunction()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </header>
+        <div id="divMenu">
+            <a onclick="myFunction()" href="#" ><div id="cvMenu"><h3>Currículo</h3></div></a>
+            <a onclick="myFunction()" href="#footer"><div id="contactMenu"><h3>Contatos</h3></div></a>
+            <a onclick="myFunction()" href="#anchor1" ><div id="projectsMenu"><h3>Projetos</h3></div></a>
+            <a onclick="myFunction()" href="#anchor2" ><div id="skillsMenu"><h3>Habilidades</h3></div></a>
+        </div>
+    </nav>
+
+<!-- Intro (Primeiro bloco [preto])-->
+        <div id="intro">
+            <div id="content">
+            <p class="whiteP">Olá, meu nome é</p>
+            <h1>Rafael Teixeira</h1>
+            <p class="whiteP">e eu sou Desenvolvedor<br>Full Stack & Designer.</p>
+            </div>
+        </div>
+        
+<!-- GIF -->
+        <div id="gifPlace">
+            <img id="gif" src="./files/coding.gif">
+        </div>
+
+<!-- Sobre mim -->
+    <div id="aboutMe">
+        <h2 id="h2AboutMe">Sobre mim</h2>
+            <div id="circle">
+                <img id="photo" src="./files/photo.png">
+            </div>
+        <p class="whiteP2">Designer, Full Stack Dev e<br>Estudante de Análise e Desenvolvimento<br>de Sistemas<br><br>Amante de Design, Tecnologia,<br>Leitura, Verão, Natureza<br>e Esportes...</be></p>
+        <div id="anchor2"></div>
+    </div>
+
+<!-- Habilidades -->
+    <div id="skills">
+        <h2 id="h2Skills">Habilidades</h2>
+        <div id="images">
+            <img class=imgs src="./files/skills/html.png">
+            <img class=imgs src="./files/skills/css.png">
+            <img class=imgs src="./files/skills/js.png">
+            <img class=imgs src="./files/skills/corelDraw.png">
+            <img class=imgs src="./files/skills/photoshop.png">
+            <img class=imgs src="./files/skills/bwReact.png">
+            <img class=imgs src="./files/skills/bwbootstrap.png">
+            <img class=imgs src="./files/skills/bwnodeJs.png">
+            <img class=imgs src="./files/skills/bwmySQL.png">
+            <img class=imgs src="./files/skills/bwmondoDB.png">
+            <img class=imgs src="./files/skills/bwfirebase.png">
+            <img class=imgs src="./files/skills/bwjQuery.png">
+            <div id="anchor1"></div>
+        </div>
+    </div>
+
+<!-- Projetos -->
+    <div id="projects">
+        <h2 id="h2Projects">Projetos</h2>
+        <p class="blackP2">Abaixo você tem acesso aos meus principais projetos...</p>
+        <p id="clickto">Clique para ser redirecionado.</p>
+            <div id="projectsContainer">
+                <h4 class="blackP2">Churrascômetro</h4>
+                <div class="placeProject">
+                    <a href="https://rafaelteixeiradesigner.github.io/Churrascometro/">
+                        <img id="project1" src="./files/projects/churrascometro.jpg">
+                    </a>
+                </div>
+
+             <!--   
+                            <div class="placeProject">
+                                    </div>
+
+                                    <div class="placeProject">
+                                    </div>
+
+                                    <div class="placeProject">
+                                    </div>
+
+                                    <div class="placeProject">
+                                    </div>
+
+                                    <div class="placeProject">
+                                    </div>
+                            </div>  
+            -->
+    </div>
+
+    <div id="footer">
+        <footer>
+            <h2 id="h2Contact">Contatos</h2>
+            <div id="contactContainer">
+                <div class="button" id="buttonLinkedin">
+                    <img class="icon" src="./files/icons/linkedin.png">
+                    <p class="contactText" >Rafael Teixeira</p>
+                </div>
+
+                <a href="https://github.com/rafaelTeixeiraDesigner"><div class="button" id="buttonGithub">
+                    <img class="icon" src="./files/icons/github.png">
+                    <p class="contactText" >rafaelTeixeiraDesigner</p>
+                </div></a>
+
+                <a href="https://wa.me/5521973237521"><div class="button" id="buttonWhatsapp">
+                    <img class="icon" src="./files/icons/whatsapp.png">
+                    <p class="contactText" >+55 21 97323-7521</p>
+                </div></a>
+
+                <a href="https://www.instagram.com/rafaelteixeiradesigner"><div class="button" id="buttonInstagram">
+                    <img class="icon" src="./files/icons/instagram.png">
+                    <p class="contactText" >@rafaelteixeiradesigner</p>
+                </div></a>
+
+                <a href="mailto:rafaelteixeiradesigner@gmail.com"><div class="button" id="buttonEmail">
+                    <img class="icon" id="email" src="./files/icons/email.png">
+                    <p class="contactText" id="emailText" >rafaelteixeiradesigner<br>@gmail.com</p>
+                </div></a>
+            </div>
+        </footer>
+        <p id="doneBy">Feito por : Rafael Teixeira Designer - 2022.</p>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

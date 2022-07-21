@@ -1,0 +1,292 @@
+* {margin: 0; padding: 0;}
+
+a {text-decoration: none;}
+
+html {scroll-behavior:smooth}
+
+@font-face {
+    font-family:  Poppins;
+    src: url(./files/Poppins-LightItalic.ttf);}
+
+@font-face {
+        font-family: Argentum;
+        src: url(./files/argentum-sans.light.ttf);
+        }
+
+@keyframes pulse {
+        from {background-color: #00ccff;}
+        to {background-color:#105a77;}
+        }
+
+/* DESKTOP VIEW */
+
+/* MOBILE VIEW 
+@media (max-width:850px)*/
+
+/*Barra/Menu Superior*/
+header  {width: 100%;
+        height: 75px;
+        background-color: black;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: solid 2px #00d9ff;
+        }
+
+#logo   {height: 50%;
+        padding-left: 20px;
+        padding-top:18px;
+        }
+/* ========================= Botão Menu ====================================================================*/
+.menu   {display: inline-block;
+        cursor: pointer;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-left: 20px;
+        }
+                                                        
+.bar1, .bar2, .bar3 {width: 35px;
+        height: 3px;
+        background-color: white;
+        margin: 6px;
+        transition: 0.4s;
+        }
+                                                                
+.change .bar1 {-webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+        transform: rotate(-45deg) translate(-8px, 8px) ;
+        }
+
+.change .bar2 {opacity: 0;}
+                                                        
+.change .bar3 {-webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+        transform: rotate(45deg) translate(-5px, -5px) ;
+        }
+
+#divMenu {width: 100vw;
+        height: calc(100vh - 77px);
+        margin-top: 77px;
+        position: fixed;
+        margin-left: 100vw;    
+        transition: 0.6s;    
+        }
+
+.changediv  {transform: translateX(-100vw);}
+
+#cvMenu, #contactMenu, #projectsMenu, #skillsMenu {background-color: black;
+        width: 100%;
+        height: 25%;
+        text-align: center;
+        font-family: Poppins, Arial, Helvetica;
+        color: white;
+        font-size: 20px;
+        border-bottom: solid 1px #00d9ff;
+        }
+
+h3 {padding-top: 55px;}
+/* =======================================================================================================*/
+
+/*Intro (Primeiro bloco [preto])*/
+#intro  {width: 100%;
+        height: 70vw;
+        background-image:url(./files/backgroundIntro.png);
+        background-size: cover;
+        text-align: center;
+        padding-top: 75px;
+        }
+
+#content{padding-top: 10vw;}
+        
+.whiteP, .whiteP2 {font-family: Poppins, Arial, Helvetica;
+        color: white;
+        font-size: 6vw;
+        }
+
+h1, #h2AboutMe, #h2Projects, #clickto, #h2Contact {background-image: linear-gradient(to right, #00FFD9, #008CFF);  
+        background-clip: text;
+        -webkit-background-clip: text;          
+        -webkit-text-fill-color: transparent;
+        font-family: Argentum, Helvetica, Arial;
+        font-size: 9vw;
+        }
+
+#gifPlace {background-color: #043042;}
+
+#gif    {width: 100%;}
+
+/*Sobre mim*/
+#aboutMe{width: 100%;
+        height: 170vw;
+        text-align: center;
+        background-color: #043042;
+        }
+
+#h2AboutMe      {font-size: 8vw;
+        padding: 5vw;
+        }
+
+#photo  {width: 95%;
+        padding-top: 3px;
+        }
+
+#circle {background-color: #0886a5;
+        border-radius: 50%;
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;
+        transition: 1s;
+        animation: pulse 0.8s infinite alternate-reverse;
+        }
+
+/*Habilidades*/
+#skills{width: 100%;
+        height: 130vw;
+        background-image: linear-gradient(150deg, #008CFF,#9500FF);
+        text-align: center;    
+        }
+
+.imgs   {width: 22vw;
+        padding: 1vw;
+        }
+
+#h2Skills{color: white;
+        font-family: Argentum, Helvetica, Arial;
+        font-size: 7.5vw;
+        padding: 5vw;
+        }
+        
+/*Projetos*/
+
+#projects{display: block;
+        width: 100%;
+        height: 118vw;
+        text-align: center;
+        }
+
+.whiteP2 {color: white;
+        padding: 4vw;
+        }
+
+.blackP2 {font-family: Poppins, Arial, Helvetica;
+        color: black;
+        font-size: 6vw;
+        padding: 5vw;
+        padding-top: 0;
+        }
+
+h4 {padding: 0;}
+
+#h2Projects {background-image: linear-gradient(to bottom, #9500FF,#008CFF);  
+        padding: 5vw;    
+        font-size: 8vw;    
+        }
+
+#clickto {background-image: linear-gradient(to right, #9500FF,#008CFF);
+        font-size: 5vw;
+        padding: 5vw;
+        padding-top: 0;
+        }
+
+#projectsContainer {display: block;
+        padding-top: 3vw;
+        align-items: center;
+        }
+
+.placeProject{width: 80%;
+        height: 30vw;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 2vw;
+        background-color: rgb(192, 192, 192);
+        }
+
+#project1 {width: 100%; 
+        cursor: pointer;
+        }
+
+/* Contato [FOOTER] */
+
+#h2Contact {font-size: 7vw;
+        padding-top: 2vw;
+        }
+
+#footer {width: 100%;
+        height: 140vw;
+        margin-top: 10vw;
+        background-image:url(./files/footerBackground.jpg);
+        background-size: cover;
+        margin-bottom: 0;
+        }
+
+footer {padding-top: 22vw;}
+
+#contactContainer {width: 100%;
+        height: 90vw;
+        }
+
+.button {width: 70%;
+        height: 13vw;
+        border-bottom: solid 1px #2486B3;
+        border-left: solid 1px #2486B3; ;
+        margin: 3vw;
+        margin-top: 4vw;
+        margin-left: auto;
+        margin-right: auto;
+        transition: 1s;
+        }
+
+#buttonLinkedin {margin-top: 7vw;}
+
+#buttonGithub {border-bottom: solid 1px white;
+        border-left: solid 1px white;
+        }
+
+#buttonWhatsapp {border-bottom: solid 1px #4BCA5A;
+        border-left: solid 1px #4BCA5A;
+        }
+
+#buttonInstagram {border-bottom: solid 1px #D92E7D;
+        border-left: solid 1px #D92E7D;
+        }
+
+#buttonEmail {border-bottom: solid 1px #F14336;
+        border-left: solid 1px #F14336;
+        }
+
+#doneBy {color: white;
+        margin-top: 3vw;
+        font-family: Poppins, Arial, Helvetica;
+        font-size: 3vw;
+        }
+
+.icon   {height: 70%;
+        color: white;
+        margin-top: 2vw;
+        float: left;
+        padding-left: 3vw;
+        }
+
+#email {height: 50%;
+        margin-top: 2.8vw;
+        }
+
+.contactText {color: white;
+        float: right;
+        font-family: Poppins, Arial, Helvetica;
+        font-size: 4vw;
+        padding-right: 3vw;
+        padding-top: 3vw;
+        }
+
+#emailText {padding-top: 3vw;
+        line-height: 1;
+        }
+
+#anchor1 {height: 10vw;
+        transform: translateY(-15vw);
+        width: 1vw;
+        }
+
+#anchor2 {height: 10vw;
+        width: 1vw;
+        transform: translateY(-15vw);
+        }
