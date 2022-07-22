@@ -13,15 +13,18 @@ html {scroll-behavior:smooth}
         src: url(./files/argentum-sans.light.ttf);
         }
 
-@keyframes pulse {
+@keyframes pulse 
+        {
         from {background-color: #00ccff;}
         to {background-color:#105a77;}
-        }
+        }        
 
-/* DESKTOP VIEW */
+@keyframes scale {
+                from {transform: scale(0.85);}
+                to {transform: scale(1);}
+                }
 
-/* MOBILE VIEW 
-@media (max-width:850px)*/
+/*MOBILE VIEW */
 
 /*Barra/Menu Superior*/
 header  {width: 100%;
@@ -62,15 +65,15 @@ header  {width: 100%;
         transform: rotate(45deg) translate(-5px, -5px) ;
         }
 
-#divMenu {width: 100vw;
-        height: calc(100vh - 77px);
+#divMenu {width: 80vw;
+        height: calc(85vh - 77px);
         margin-top: 77px;
         position: fixed;
         margin-left: 100vw;    
         transition: 0.6s;    
         }
 
-.changediv  {transform: translateX(-100vw);}
+.changediv  {transform: translateX(-92vw);}
 
 #cvMenu, #contactMenu, #projectsMenu, #skillsMenu {background-color: black;
         width: 100%;
@@ -80,9 +83,12 @@ header  {width: 100%;
         color: white;
         font-size: 20px;
         border-bottom: solid 1px #00d9ff;
+        border-left: solid 1px #00d9ff;
+        border-right: solid 1px #00d9ff;
+        opacity: 95%;
         }
 
-h3 {padding-top: 55px;}
+h3 {padding-top: 44px;}
 /* =======================================================================================================*/
 
 /*Intro (Primeiro bloco [preto])*/
@@ -145,7 +151,13 @@ h1, #h2AboutMe, #h2Projects, #clickto, #h2Contact {background-image: linear-grad
         }
 
 .imgs   {width: 22vw;
-        padding: 1vw;
+        padding: 2vw;
+        }
+
+#images {display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        justify-content: center;
         }
 
 #h2Skills{color: white;
@@ -290,3 +302,184 @@ footer {padding-top: 22vw;}
         width: 1vw;
         transform: translateY(-15vw);
         }
+
+/* DESKTOP VIEW */
+@media (min-width:851px) {
+
+nav     {display: none;}
+
+#intro  {
+        height: 27vw;
+        background-image:url(./files/desktopIntroBackground.jpg);
+        padding-top: 0px;
+        }
+
+#content{padding-top: 3vw;}
+        
+.whiteP, .whiteP2 {font-size: 2.5vw;}
+ 
+h1, #h2AboutMe, #h2Projects, #clickto, #h2Contact, #h2Skills {font-size: 3.5vw;}
+
+h1      {padding: 0.3vw;}
+
+#h2AboutMe {
+        padding:2vw;
+        padding-top: 3.5vw;
+        margin-right: 51vw;
+        transform: translateY(-33vw);        }
+
+#h2Contact{padding-bottom: 3vw;}
+
+#gifPlace {
+        margin-left: 50vw;
+        background-color: white;
+        overflow: hidden;
+        }
+
+#gif    {
+        width: 48vw;
+        transform: translateX(10px);
+        }
+
+#aboutMe{        
+        height: 30vw;
+        transform: translateY(-65px);
+        }
+
+#photo  {width: 23vw;
+        padding-top: 3px;
+        transform: translateX(0.6vw);
+        }
+
+#circle {
+        width: 24vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        display: inline-flex ;
+        transform: translateY(-34vw);
+        }
+
+.whiteP2 {
+        padding: 0vw;
+        margin-right: 10vw;
+        font-size: 2vw;
+        float: right;
+        transform: translateX(-22vw) translateY(-5.5vw);
+
+        }
+
+
+#skills{height: 20vw;  
+        transform: translateY(-70px);
+        }
+
+#h2Skills{
+        padding: 1vw;
+        padding-top: 2vw;
+        }
+
+#images {display: grid;
+        width: 98vw;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+        justify-content: center;
+        }
+
+.imgs   {width:6vw;
+        padding: 0.5vw;
+        }
+
+#html  {animation: scale 0.8s infinite alternate-reverse;}
+
+#css   {animation: scale 0.8s infinite alternate-reverse;
+        animation-delay: 0.1s;}
+
+#js    {animation: scale 0.8s infinite alternate-reverse;
+        animation-delay: 0.2s;}
+        
+#corel {animation: scale 0.8s infinite alternate-reverse;
+        animation-delay: 0.3s;}
+        
+#photoshop {
+        animation: scale 0.8s infinite alternate-reverse;
+        animation-delay: 0.4s;}
+
+#projects{
+        height: 60vw;
+        text-align: center;
+        transform: translateY(-80px);
+        }
+
+#projectsContainer {height:27vw}
+
+.blackP2 {font-size: 2vw;
+        padding-bottom: 1.5vw ;                
+}
+
+#h2Projects {padding-bottom: 1.5vw;}
+
+.placeProject {background-color: white;}
+
+#project1{width: 60vw;
+        background-color: white;
+}
+
+#clickto {background-image: linear-gradient(to right, #9500FF,#008CFF);
+        font-size: 2vw;
+        padding: 0vw;
+        padding-top: 0;
+        }
+
+#footer {width: 100%;
+        height: 37vw;
+        margin-top: 0vw;
+        background-image:url(./files/desktopFooterBackground.jpg);
+        background-size: cover;
+        }
+        
+footer {padding-top: 14vw;
+}
+
+#contactContainer {width: 100%;
+        height: 3vw;
+        display: inline-flex;
+        justify-content: center;
+        }
+
+.button {width: 17vw;
+        height: 3vw;
+        padding: 10px;
+        margin: 3vw;
+        margin-top: 0vw;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+.contactText {
+        font-size: 1.1vw;
+        padding: 0;
+        }
+
+#buttonLinkedin {margin: 0vw;
+                margin-top: 0vw;}
+
+#buttonGithub:hover {background-color: rgb(139, 139, 139);}
+
+#buttonWhatsapp:hover {background-color: #4BCA5A;}
+        
+#buttonInstagram:hover {background-color: #D92E7D;}
+        
+#buttonEmail:hover {background-color: #F14336;}
+
+#doneBy {font-size: 1vw;}
+                
+.icon   {height: 100%;
+        margin-top: 0.5vw;
+        transform: translateY(-1vw);
+        padding-left: 0.5vw;}
+                
+#email {height: 80%;
+        transform: translateY(-3.2vw);
+        margin-top: 3vw;}
+                
+#emailText {padding-top: 0vw;}
+}
