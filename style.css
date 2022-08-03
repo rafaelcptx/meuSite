@@ -73,7 +73,7 @@ header  {width: 100%;
         transition: 0.6s;    
         }
 
-.changediv  {transform: translateX(-92vw);}
+.changediv  {transform: translateX(-90vw);}
 
 #cvMenu, #contactMenu, #projectsMenu, #skillsMenu {background-color: black;
         width: 100%;
@@ -340,11 +340,7 @@ h1      {padding: 0.3vw;}
         width: 48vw;
         transform: translateX(10px);
         }
-
-#aboutMe{        
-        height: 30vw;
-        transform: translateY(-65px);
-        }
+#aboutMe {height:30vw; transform: translateY(-65px);}
 
 #photo  {width: 23vw;
         padding-top: 3px;
