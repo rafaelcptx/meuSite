@@ -458,6 +458,8 @@ footer {padding-top: 14vw;
 #buttonLinkedin {margin: 0vw;
                 margin-top: 0vw;}
 
+#buttonLinkedin:hover {background-color: #2486B3;}
+
 #buttonGithub:hover {background-color: rgb(139, 139, 139);}
 
 #buttonWhatsapp:hover {background-color: #4BCA5A;}
